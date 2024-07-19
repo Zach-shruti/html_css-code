@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and Footer Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px; /* Rounded corners */
+            overflow: hidden; /* Ensure content doesn't overflow outside the rounded corners */
+        }
+        header, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: lightgray; /* Optional: to visualize the header and footer */
+        }
+        .header-box {
+            height: 60px;
+            width: 100%;
+            background-color: gray; /* Optional: to visualize the box */
+        }
+        footer {
+            height: 57.97px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px; /* Add padding for spacing */
+            background-color: #f0f0f0; /* Optional: to visualize the content area */
+            position: relative; /* Enable positioning */
+        }
+        .box-below-header {
+            position: absolute;
+            top: 10px; /* Adjust as needed based on your header height */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            height: 20px;
+            width: 350px;
+            background-color: white;
+            border: 1px solid #ccc; /* Optional: add border for visibility */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add shadow effect */
+            border-radius: 5px; /* Optional: add rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-box"></div>
+    </header>
+
+    <div class="content">
+        <div class="box-below-header"></div>
+    </div>
+
+    <footer>
+        <div></div> <!-- Empty div for alignment -->
+        <div class="header-box"></div>
+        <div></div> <!-- Empty div for alignment -->
+    </footer>
+</body>
+</html>
+
+
+
